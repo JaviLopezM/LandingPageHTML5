@@ -5,29 +5,58 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
     <title>Landing Page</title>
     <style>
+        html {
+            background: url("http://lorempixel.com/1024/600/technics/Dummy-Text/");
+            -webkit-background-image: cover;
+            -moz-background-image: cover;
+            -o-background-image: cover;
+            -webkit-background-size: cover;
+            background-size: cover;
+
+        }
+
         body {
             padding-top: 20px;
+            font-size: 16px;
+            font-family: Open Sans;
+            background: transparent;
+                    }
+        h1 {
+            font-weight: 400;
+            font-size: 40px;
+            font-family: "Montserrat",Arial, sans-serif;
+        }
+        .margin-vertical{
+            margin: 40px 0;
+        }
+        .panel{
+            background-color:floralwhite ;
         }
     </style>
 </head>
 <body>
 <div class="container">
     <div class="row">
-        <div class="col-md-4 col-md-offset-4">
-            <h1>Lorem ipsum dolor sit.</h1>
+        <div class="col-md-6 col-md-offset-3" class="panel">
+            <h1 class="margin-vertical">Lorem ipsum dolor sit.</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus deleniti dolor, esse minus numquam odit quia repellat? Aperiam architecto delectus fugit inventore modi molestiae quidem voluptas! Ad deserunt eum voluptate.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi consequatur debitis distinctio eaque eos eum expedita fuga fugiat inventore minima nemo optio provident recusandae rerum ullam veritatis, voluptatum? Error, rem!</p>
             <p>Interested?</p>
 
-            <form action="#" method="post">
-                <p class="input-group">
-                    <span class="input-group-addon">@</span>
+            <form action="#" method="post" class="margin-vertical">
+                <p class="input-group" class="text-center">
+                    <span class="input-group-addon">
+                        <span class="fa fa-envelope-o"></span>
+                    </span>
                     <input type="email" class="form-control" name="email" placeholder="Your email here">
                 </p>
-                <p>Sense SPAM</p>
-                <p>
+                <p class="text-center">No t'enviarem SPAM</p>
+                <p class="text-center">
                     <input type="submit" class="btn btn-success btn-lg" value="Subscribe">
                 </p>
 
